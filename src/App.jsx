@@ -13,20 +13,20 @@ const DISHES = [
 const USPS = [
   { icon: "🌿", title: "Farm-to-Table Ingredients", desc: "Every ingredient is sourced fresh daily from certified organic farms and local artisan producers." },
   { icon: "🏆", title: "Award-Winning Chefs", desc: "Our team holds 3 Michelin stars and has been recognized by the World's 50 Best Restaurants." },
-  { icon: "✨", title: "Unmatched Ambience", desc: "Every corner of MISBA is designed to transport you — from the lighting to the table linens." },
+  { icon: "✨", title: "Unmatched Ambience", desc: "Every corner of Faizan is designed to transport you — from the lighting to the table linens." },
   { icon: "🍷", title: "Curated Wine Cellar", desc: "Over 800 labels selected by our resident sommelier from the finest vineyards worldwide." },
 ];
 
 const TESTIMONIALS = [
-  { name: "Priya Mehta", role: "Food Critic, Condé Nast", quote: "MISBA doesn't just serve food — it orchestrates an entire sensory performance. A transcendent evening every single time.", stars: 5 },
-  { name: "James Whitfield", role: "CEO, Whitfield Group", quote: "We've hosted board dinners at MISBA for three years. The consistency of excellence is simply unmatched anywhere in the city.", stars: 5 },
-  { name: "Aisha Kapoor", role: "Travel Blogger", quote: "If I could only eat at one restaurant for the rest of my life, it would be MISBA. Bold claim — absolutely meant.", stars: 5 },
+  { name: "Priya Mehta", role: "Food Critic, Condé Nast", quote: "Faizan doesn't just serve food — it orchestrates an entire sensory performance. A transcendent evening every single time.", stars: 5 },
+  { name: "James Whitfield", role: "CEO, Whitfield Group", quote: "We've hosted board dinners at Faizan for three years. The consistency of excellence is simply unmatched anywhere in the city.", stars: 5 },
+  { name: "Aisha Kapoor", role: "Travel Blogger", quote: "If I could only eat at one restaurant for the rest of my life, it would be Faizan. Bold claim — absolutely meant.", stars: 5 },
 ];
 
 const SERVICES = [
   { icon: "🍽️", title: "Fine Dining Experience", desc: "An intimate à la carte journey through seasonal tasting menus, crafted fresh each evening by Chef Laurent and his brigade." },
   { icon: "🥂", title: "Private Events & Dining", desc: "Exclusive private rooms for up to 40 guests. Perfect for anniversaries, proposals, corporate celebrations, and bespoke occasions." },
-  { icon: "🚐", title: "Luxury Catering", desc: "Bring the MISBA experience to your venue. Our catering team delivers the same Michelin-starred quality, wherever you are." },
+  { icon: "🚐", title: "Luxury Catering", desc: "Bring the Faizan experience to your venue. Our catering team delivers the same Michelin-starred quality, wherever you are." },
   { icon: "📅", title: "Online Reservations", desc: "Secure your table instantly via our seamless booking system. Personalise your visit with dietary notes and special requests." },
 ];
 
@@ -43,10 +43,10 @@ const PORTFOLIO_ITEMS = [
 ];
 
 const TIMELINE = [
-  { year: "2008", title: "The Beginning", desc: "Chef Laurent Moreau opens MISBA as a 30-seat bistro in South Mumbai with a single vision: honest luxury." },
-  { year: "2012", title: "First Michelin Star", desc: "Four years of relentless refinement earns MISBA its first Michelin star — the first in Maharashtra." },
-  { year: "2017", title: "The Grand Expansion", desc: "A full renovation transforms MISBA into a 120-seat temple of fine dining, with a private event wing." },
-  { year: "2022", title: "Third Star Awarded", desc: "MISBA joins a rarefied group of three-star establishments in Asia, cementing its global reputation." },
+  { year: "2008", title: "The Beginning", desc: "Chef Laurent Moreau opens Faizan as a 30-seat bistro in South Mumbai with a single vision: honest luxury." },
+  { year: "2012", title: "First Michelin Star", desc: "Four years of relentless refinement earns Faizan its first Michelin star — the first in Maharashtra." },
+  { year: "2017", title: "The Grand Expansion", desc: "A full renovation transforms Faizan into a 120-seat temple of fine dining, with a private event wing." },
+  { year: "2022", title: "Third Star Awarded", desc: "Faizan joins a rarefied group of three-star establishments in Asia, cementing its global reputation." },
 ];
 
 /* ─── HELPERS ───────────────────────────────────────── */
@@ -82,7 +82,7 @@ function Navbar({ activePage, setActivePage }) {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 transition-all duration-500 ${scrolled ? "py-3 bg-[#0D0B08]/95 backdrop-blur-xl border-b border-[#3B82F6]/10" : "py-5 bg-transparent"}`}>
       <button onClick={() => setActivePage("Home")} className="font-serif text-xl font-bold text-[#3B82F6] tracking-widest">
-MISBA<span className="italic font-light text-[#F5EDD6]">.</span>      </button>
+Faizan<span className="italic font-light text-[#F5EDD6]">.</span>      </button>
 
       {/* Desktop links */}
       <ul className="hidden md:flex items-center gap-8">
@@ -198,7 +198,7 @@ Enjoy the best food in your city with fresh ingredients and amazing taste.      
       <section className="py-24 bg-[#111009] border-y border-[#3B82F6]/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <SectionLabel label="The MISBA Promise" />
+            <SectionLabel label="The Faizan Promise" />
             <h2 className="font-serif text-4xl md:text-5xl text-[#F5EDD6] mb-4">Why Choose Us</h2>
             <GoldDivider />
           </div>
@@ -274,7 +274,7 @@ Enjoy the best food in your city with fresh ingredients and amazing taste.      
       {/* ── GALLERY PREVIEW ── */}
       <section className="py-28 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <SectionLabel label="The MISBA World" />
+          <SectionLabel label="The Faizan World" />
           <h2 className="font-serif text-4xl md:text-5xl text-[#F5EDD6] mb-4">Gallery Preview</h2>
           <GoldDivider />
         </div>
@@ -313,13 +313,13 @@ function About() {
           </h2>
           <GoldDivider />
           <div className="space-y-5 mt-8" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}>
-            <p className="text-[#A89878] leading-relaxed">MISBA was never meant to be just a restaurant. When Chef Laurent Moreau arrived in Mumbai in 2008 with nothing but two suitcases and an obsession with honest flavour, he found a city hungry for something different — something that honoured tradition while embracing the bold.</p>
+            <p className="text-[#A89878] leading-relaxed">Faizan was never meant to be just a restaurant. When Chef Laurent Moreau arrived in Mumbai in 2008 with nothing but two suitcases and an obsession with honest flavour, he found a city hungry for something different — something that honoured tradition while embracing the bold.</p>
             <p className="text-[#A89878] leading-relaxed">What began as a 30-seat bistro in Colaba has grown into one of Asia's most celebrated dining destinations. Three Michelin stars, countless memories, and an unwavering commitment to the idea that dining is theatre — and every guest deserves a front-row seat.</p>
           </div>
         </div>
         <div className="relative">
           <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&q=85"
-            alt="MISBA interior" className="w-full h-[500px] object-cover" loading="lazy" />
+            alt="Faizan interior" className="w-full h-[500px] object-cover" loading="lazy" />
           <div className="absolute -bottom-5 -left-5 bg-[#3B82F6] p-6">
             <p className="font-serif text-4xl text-[#0D0B08] font-bold">2008</p>
             <p className="text-[#0D0B08] text-xs tracking-widest uppercase mt-1">Est. Mumbai</p>
@@ -404,7 +404,7 @@ function Services({ setActivePage }) {
         </h2>
         <GoldDivider />
         <p className="text-[#A89878] mt-6 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.15rem" }}>
-          Every service at MISBA is curated with the same exacting standard — an obsessive attention to detail that transforms any occasion into an extraordinary memory.
+          Every service at Faizan is curated with the same exacting standard — an obsessive attention to detail that transforms any occasion into an extraordinary memory.
         </p>
       </section>
 
@@ -576,7 +576,7 @@ function Contact() {
           <div className="relative overflow-hidden h-56 bg-[#1A1611] border border-[#3B82F6]/15 flex items-center justify-center">
             <div className="text-center">
               <p className="text-[#3B82F6] text-3xl mb-2">📍</p>
-              <p className="font-serif text-[#F5EDD6]">MISBA Fine Dining</p>
+              <p className="font-serif text-[#F5EDD6]">Faizan Fine Dining</p>
               <p className="text-[#A89878] text-sm mt-1">12, Napean Sea Road, Malabar Hill</p>
               <p className="text-[#A89878] text-sm">Mumbai, Maharashtra 400 006</p>
               <a href="https://maps.google.com" target="_blank" rel="noreferrer"
@@ -599,7 +599,7 @@ function Contact() {
 
           {/* Contact details */}
           <div className="space-y-5">
-            {[["📞", "Reservations", "+91 9591895425"], ["✉️", "Email", "reserve@MISBA.in"], ["📸", "Instagram", "@misba.sirsi"]].map(([icon, label, val]) => (
+            {[["📞", "Reservations", "+91 9591895425"], ["✉️", "Email", "reserve@Faizan.in"], ["📸", "Instagram", "@Faizan.sirsi"]].map(([icon, label, val]) => (
               <div key={label} className="flex items-center gap-4">
                 <div className="w-10 h-10 border border-[#3B82F6]/25 flex items-center justify-center text-sm flex-shrink-0">{icon}</div>
                 <div>
@@ -623,7 +623,7 @@ function Footer({ setActivePage }) {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <p className="font-serif text-2xl font-bold text-[#3B82F6] tracking-widest mb-4">MISBA<span className="italic font-light text-[#F5EDD6]">.</span></p>
+            <p className="font-serif text-2xl font-bold text-[#3B82F6] tracking-widest mb-4">Faizan<span className="italic font-light text-[#F5EDD6]">.</span></p>
             <p className="text-[#A89878] text-sm leading-relaxed font-light max-w-xs" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Three Michelin stars. One unforgettable evening. Mumbai's temple of fine dining since 2008.
             </p>
@@ -642,12 +642,12 @@ function Footer({ setActivePage }) {
               <p>12, Napean Sea Road, Malabar Hill</p>
               <p>Mumbai, Maharashtra 400 006</p>
               <p className="mt-4">+91 22 4001 9999</p>
-              <p>reserve@MISBA.in</p>
+              <p>reserve@Faizan.in</p>
             </div>
           </div>
         </div>
         <div className="border-t border-[#3B82F6]/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#A89878] text-xs tracking-widest">© 2025 MISBA Fine Dining. All rights reserved.</p>
+          <p className="text-[#A89878] text-xs tracking-widest">© 2025 Faizan Fine Dining. All rights reserved.</p>
           <p className="text-[#A89878] text-xs tracking-widest">Crafted with passion in Mumbai</p>
         </div>
       </div>
